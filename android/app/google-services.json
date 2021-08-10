@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "480593427097",
+    "project_id": "newapp-f3975",
+    "storage_bucket": "newapp-f3975.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:480593427097:android:5bde03a6771310090fd608",
+        "android_client_info": {
+          "package_name": "com.example.farmvill"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "480593427097-u601sslp17v3aj23tn9cpcbqr2ega7gd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAHk22x7xmHZs66k_IvzhN9npyhAZiuRG4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "480593427097-u601sslp17v3aj23tn9cpcbqr2ega7gd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:480593427097:android:515a2dccd80c30490fd608",
+        "android_client_info": {
+          "package_name": "com.example.recipe_app2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "480593427097-u601sslp17v3aj23tn9cpcbqr2ega7gd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAHk22x7xmHZs66k_IvzhN9npyhAZiuRG4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "480593427097-u601sslp17v3aj23tn9cpcbqr2ega7gd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
