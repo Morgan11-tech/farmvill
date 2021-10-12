@@ -1,4 +1,4 @@
-import 'package:farmvill/Screens/body.dart';
+import 'package:farmvill/widgets/body.dart';
 import 'package:farmvill/Screens/home.dart';
 import 'package:farmvill/Screens/landingpage.dart';
 import 'package:farmvill/Screens/login.dart';

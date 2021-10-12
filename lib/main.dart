@@ -18,6 +18,7 @@ class MyApp extends StatelessWidget {
         textTheme: GoogleFonts.poppinsTextTheme(
           Theme.of(context).textTheme,
         ),
+        accentColor: Colors.orange[900],
       ),
       home: Home(),
     );

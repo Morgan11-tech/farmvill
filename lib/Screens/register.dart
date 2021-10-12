@@ -3,6 +3,7 @@ import 'package:farmvill/Screens/home.dart';
 import 'package:farmvill/Screens/login.dart';
 import 'package:farmvill/widgets/backgroundimage.dart';
 import 'package:farmvill/widgets/pallete.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -119,7 +120,20 @@ class _RegisterPageState extends State<RegisterPage> {
                     ),
                     SizedBox(height: 10),
                     InkWell(
-                      onTap: () {},
+                      onTap: () {
+                        //Register with google
+                        AuthClass()
+                            .signinwithgoogle()
+                            .then((UserCredential value) {
+                          final displayName = value.user!.displayName;
+                          print(displayName);
+                          Navigator.pushAndRemoveUntil(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => HomePage()),
+                              (route) => false);
+                        });
+                      },
                       child: Ink(
                         color: Colors.blueGrey[600]!.withOpacity(0.8),
                         child: Padding(
