@@ -1,3 +1,5 @@
+// ignore_for_file: deprecated_member_use
+
 import 'package:farmvill/Screens/login.dart';
 import 'package:farmvill/widgets/pallete.dart';
 import 'package:flutter/material.dart';
@@ -44,12 +46,13 @@ class _LandingpageState extends State<Landingpage> {
                           style: kText,
                         ),
                         SizedBox(
-                          height: 50,
+                          height: 70,
                         ),
                         Center(
                           child: FlatButton(
+                            minWidth: 300,
                             shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(18.0),
+                              borderRadius: BorderRadius.circular(12.0),
                             ),
                             onPressed: () {
                               Navigator.push(
@@ -62,7 +65,7 @@ class _LandingpageState extends State<Landingpage> {
                             textColor: Colors.black,
                             child: Text("GET STARTED",
                                 style: TextStyle(
-                                    fontSize: 15, fontWeight: FontWeight.bold)),
+                                    fontSize: 17, fontWeight: FontWeight.bold)),
                           ),
                         ),
                       ]),

@@ -68,8 +68,9 @@ class _RegisterPageState extends State<RegisterPage> {
                       height: 30,
                     ),
                     FlatButton(
+                      minWidth: 300,
                       shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(18.0),
+                        borderRadius: BorderRadius.circular(12.0),
                       ),
                       padding: EdgeInsets.all(10.0),
                       color: Colors.greenAccent[700],
@@ -101,7 +102,10 @@ class _RegisterPageState extends State<RegisterPage> {
                           }
                         });
                       },
-                      child: Text('CREATE ACCOUNT'),
+                      child: Text(
+                        'CREATE ACCOUNT',
+                        style: TextStyle(fontSize: 16),
+                      ),
                     ),
                     SizedBox(
                       height: 20,
@@ -120,6 +124,8 @@ class _RegisterPageState extends State<RegisterPage> {
                     ),
                     SizedBox(height: 10),
                     InkWell(
+                      customBorder: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(13)),
                       onTap: () {
                         //Register with google
                         AuthClass()
@@ -135,21 +141,27 @@ class _RegisterPageState extends State<RegisterPage> {
                         });
                       },
                       child: Ink(
-                        color: Colors.blueGrey[600]!.withOpacity(0.8),
+                        width: 300,
+                        color:
+                            Color.fromARGB(255, 170, 217, 239).withOpacity(0.8),
                         child: Padding(
-                          padding: EdgeInsets.all(6),
+                          padding: EdgeInsets.all(9),
                           child: Wrap(
                             crossAxisAlignment: WrapCrossAlignment.center,
                             children: [
+                              Padding(padding: EdgeInsets.only(left: 40)),
                               Image.asset(
                                 'assets/images/google.png',
                                 height: 20,
                                 width: 20,
                               ),
                               SizedBox(width: 12),
-                              Text(
-                                'Sign up with Google',
-                                style: kBodyText,
+                              Container(
+                                child: Text(
+                                  'Sign up with Google',
+                                  style: kBodyText,
+                                  textAlign: TextAlign.center,
+                                ),
                               ),
                             ],
                           ),

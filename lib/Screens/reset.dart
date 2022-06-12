@@ -50,7 +50,7 @@ class _ResetState extends State<Reset> {
                         height: 10,
                       ),
                       Text(
-                        "Enter email and we will send a link to\nreset your password.",
+                        "Enter email and we will send a link to\n               reset your password.",
                         style: kBodyText,
                       ),
                       SizedBox(
@@ -77,10 +77,11 @@ class _ResetState extends State<Reset> {
                           textInputAction: TextInputAction.next,
                         ),
                       ),
-                      const SizedBox(height: 10),
+                      const SizedBox(height: 15),
                       FlatButton(
+                        minWidth: 300,
                         shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(18.0),
+                          borderRadius: BorderRadius.circular(12.0),
                         ),
                         padding: EdgeInsets.all(10.0),
                         color: Colors.greenAccent[700],

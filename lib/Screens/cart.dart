@@ -111,7 +111,8 @@ class _CartPageState extends State<CartPage> {
                                               style: TextStyle(
                                                   fontSize: 16.0,
                                                   color: Theme.of(context)
-                                                      .accentColor,
+                                                      .colorScheme
+                                                      .secondary,
                                                   fontWeight: FontWeight.w600),
                                             ),
                                           ),

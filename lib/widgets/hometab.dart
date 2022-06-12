@@ -1,7 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:farmvill/Screens/products_page.dart';
 import 'package:farmvill/widgets/custom_action_bar.dart';
-import 'package:farmvill/widgets/pallete.dart';
 import 'package:farmvill/widgets/product_card.dart';
 import 'package:flutter/material.dart';
 

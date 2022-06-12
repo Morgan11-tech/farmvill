@@ -3,7 +3,7 @@ import 'package:farmvill/Screens/cart.dart';
 import 'package:farmvill/Services/firebase_services.dart';
 import 'package:flutter/material.dart';
 
-class CustomactionBar extends StatelessWidget {
+class CustomactionBar extends StatefulWidget {
   final String title;
   final bool hasbackArrow;
   final bool hasbackground;
@@ -14,6 +14,11 @@ class CustomactionBar extends StatelessWidget {
       required this.hasbackground,
       required this.hasimage});
 
+  @override
+  State<CustomactionBar> createState() => _CustomactionBarState();
+}
+
+class _CustomactionBarState extends State<CustomactionBar> {
   FirebaseServices _firebaseServices = FirebaseServices();
 
   final CollectionReference _usersRef =
@@ -21,9 +26,9 @@ class CustomactionBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    bool _hasbackArrow = hasbackArrow;
-    bool _hasbackbackground = hasbackground;
-    bool _hasimage = hasimage;
+    bool _hasbackArrow = widget.hasbackArrow;
+    bool _hasbackbackground = widget.hasbackground;
+    bool _hasimage = widget.hasimage;
 
     return Container(
       decoration: BoxDecoration(

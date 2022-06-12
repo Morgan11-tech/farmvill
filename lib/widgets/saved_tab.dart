@@ -117,7 +117,8 @@ class _SavedTabState extends State<SavedTab> {
                                                 style: TextStyle(
                                                     fontSize: 16.0,
                                                     color: Theme.of(context)
-                                                        .accentColor,
+                                                        .colorScheme
+                                                        .secondary,
                                                     fontWeight:
                                                         FontWeight.w600),
                                               ),

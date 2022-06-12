@@ -86,8 +86,9 @@ class _LoginState extends State<Login> {
                         height: 30,
                       ),
                       FlatButton(
+                        minWidth: 300,
                         shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(18.0),
+                          borderRadius: BorderRadius.circular(12.0),
                         ),
                         padding: EdgeInsets.all(10.0),
                         color: Colors.greenAccent[700],
@@ -119,7 +120,10 @@ class _LoginState extends State<Login> {
                             }
                           });
                         },
-                        child: Text('LOGIN'),
+                        child: Text(
+                          'LOGIN',
+                          style: TextStyle(fontSize: 16),
+                        ),
                       ),
                       SizedBox(
                         height: 20,

@@ -31,7 +31,7 @@ class _ProductNumberState extends State<ProductNumber> {
                 height: 42,
                 decoration: BoxDecoration(
                     color: _selected == i
-                        ? Theme.of(context).accentColor
+                        ? Theme.of(context).colorScheme.secondary
                         : Colors.grey[350],
                     borderRadius: BorderRadius.circular(12)),
                 alignment: Alignment.center,

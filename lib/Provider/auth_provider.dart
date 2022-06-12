@@ -18,6 +18,7 @@ class AuthClass {
         return 'The account already exists for that email.';
       }
     }
+    return null;
   }
 
 //sign in user
@@ -33,6 +34,7 @@ class AuthClass {
         return 'Wrong password provided for that user.';
       }
     }
+    return null;
   }
 
 //reset password
